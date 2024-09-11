@@ -44,10 +44,13 @@ function playGame() {
         getComputerChoice();
         playRound();
         console.log("Player score: " + scorePlayer);
-        console.log("Computer score: " +scoreComputer);
+        console.log("Computer score: " + scoreComputer);
     }
+    if (scorePlayer > scoreComputer) {
+        alert("You win!");
+      } else {
+        alert("Better luck next time!")
+      }
 };
 
 playGame();
-
-//compare scores, declare winner
